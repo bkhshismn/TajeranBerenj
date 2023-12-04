@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5BD67449-803C-4D7B-941A-914BE60B070F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TajeranBerenj</RootNamespace>
+    <AssemblyName>TajeranBerenj</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.35, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsMethods.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnbar.Designer.cs">
+      <DependentUpon>frmAnbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBedBes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBedBes.Designer.cs">
+      <DependentUpon>frmBedBes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheck.Designer.cs">
+      <DependentUpon>frmCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGozareshKol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGozareshKol.Designer.cs">
+      <DependentUpon>frmGozareshKol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHazine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHazine.Designer.cs">
+      <DependentUpon>frmHazine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJbJAnbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJbJAnbar.Designer.cs">
+      <DependentUpon>frmJbJAnbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPardakhtCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPardakhtCheck.Designer.cs">
+      <DependentUpon>frmPardakhtCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmForosh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForosh.Designer.cs">
+      <DependentUpon>frmForosh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmForoshDone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForoshDone.Designer.cs">
+      <DependentUpon>frmForoshDone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmForoshNimdone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForoshNimdone.Designer.cs">
+      <DependentUpon>frmForoshNimdone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmForoshSabosDo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForoshSabosDo.Designer.cs">
+      <DependentUpon>frmForoshSabosDo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmForoshShali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForoshShali.Designer.cs">
+      <DependentUpon>frmForoshShali.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGharz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGharz.Designer.cs">
+      <DependentUpon>frmGharz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKarkhane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKarkhane.Designer.cs">
+      <DependentUpon>frmKarkhane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKharid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKharid.Designer.cs">
+      <DependentUpon>frmKharid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKharidDone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKharidDone.Designer.cs">
+      <DependentUpon>frmKharidDone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKharidNimdone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKharidNimdone.Designer.cs">
+      <DependentUpon>frmKharidNimdone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKharidSabosDo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKharidSabosDo.Designer.cs">
+      <DependentUpon>frmKharidSabosDo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKharidSabosNarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKharidSabosNarm.Designer.cs">
+      <DependentUpon>frmKharidSabosNarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKharidShali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKharidShali.Designer.cs">
+      <DependentUpon>frmKharidShali.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaliMoshtari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaliMoshtari.Designer.cs">
+      <DependentUpon>frmMaliMoshtari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMoshtari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoshtari.Designer.cs">
+      <DependentUpon>frmMoshtari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNoShali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNoShali.Designer.cs">
+      <DependentUpon>frmNoShali.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFororshSabosNarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFororshSabosNarm.Designer.cs">
+      <DependentUpon>frmFororshSabosNarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTabdil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTabdil.Designer.cs">
+      <DependentUpon>frmTabdil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTarifAnbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTarifAnbar.Designer.cs">
+      <DependentUpon>frmTarifAnbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GozareshMoshtari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GozareshMoshtari.Designer.cs">
+      <DependentUpon>GozareshMoshtari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnbar.resx">
+      <DependentUpon>frmAnbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBedBes.resx">
+      <DependentUpon>frmBedBes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheck.resx">
+      <DependentUpon>frmCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGozareshKol.resx">
+      <DependentUpon>frmGozareshKol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHazine.resx">
+      <DependentUpon>frmHazine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJbJAnbar.resx">
+      <DependentUpon>frmJbJAnbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPardakhtCheck.resx">
+      <DependentUpon>frmPardakhtCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForosh.resx">
+      <DependentUpon>frmForosh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForoshDone.resx">
+      <DependentUpon>frmForoshDone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForoshNimdone.resx">
+      <DependentUpon>frmForoshNimdone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForoshSabosDo.resx">
+      <DependentUpon>frmForoshSabosDo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForoshShali.resx">
+      <DependentUpon>frmForoshShali.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGharz.resx">
+      <DependentUpon>frmGharz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKarkhane.resx">
+      <DependentUpon>frmKarkhane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKharid.resx">
+      <DependentUpon>frmKharid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKharidDone.resx">
+      <DependentUpon>frmKharidDone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKharidNimdone.resx">
+      <DependentUpon>frmKharidNimdone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKharidSabosDo.resx">
+      <DependentUpon>frmKharidSabosDo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKharidSabosNarm.resx">
+      <DependentUpon>frmKharidSabosNarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKharidShali.resx">
+      <DependentUpon>frmKharidShali.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaliMoshtari.resx">
+      <DependentUpon>frmMaliMoshtari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMoshtari.resx">
+      <DependentUpon>frmMoshtari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNoShali.resx">
+      <DependentUpon>frmNoShali.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFororshSabosNarm.resx">
+      <DependentUpon>frmFororshSabosNarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTabdil.resx">
+      <DependentUpon>frmTabdil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTarifAnbar.resx">
+      <DependentUpon>frmTarifAnbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GozareshMoshtari.resx">
+      <DependentUpon>GozareshMoshtari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4307939-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\118777-16.png" />
+    <Content Include="Resources\2639786-32.png" />
+    <Content Include="Resources\3017867-256 %281%29.png" />
+    <Content Include="Resources\3017867-256 %281%291.png" />
+    <Content Include="Resources\3017867-256 %281%292.png" />
+    <Content Include="Resources\3319600-128.png" />
+    <Content Include="Resources\4307939-128.png" />
+    <Content Include="Resources\4307939-48.png" />
+    <Content Include="Resources\4308211-256 %281%29.png" />
+    <Content Include="Resources\4308211-256 %281%291.png" />
+    <Content Include="Resources\4308211-256 %281%292.png" />
+    <Content Include="Resources\4308211-256 %281%293.png" />
+    <None Include="Resources\4308211-256 %281%294.png" />
+    <Content Include="Resources\4308211-256 %2812%29.png" />
+    <Content Include="Resources\4308211-256.png" />
+    <Content Include="Resources\4308211-2561.png" />
+    <None Include="Resources\4308211-2562.png" />
+    <Content Include="Resources\Add.png" />
+    <Content Include="Resources\BacUp.png" />
+    <Content Include="Resources\BacUp3.png" />
+    <Content Include="Resources\BacUp32.png" />
+    <Content Include="Resources\banner3.png" />
+    <Content Include="Resources\bleachbit.png" />
+    <Content Include="Resources\bookkeeping %281%29.png" />
+    <None Include="Resources\bookkeeping %281%291.png" />
+    <Content Include="Resources\bookkeeping %282%29.png" />
+    <Content Include="Resources\Delete.png" />
+    <Content Include="Resources\Delete1.png" />
+    <Content Include="Resources\download-button.png" />
+    <Content Include="Resources\dvdrip.png" />
+    <Content Include="Resources\emblem-readonly.png" />
+    <Content Include="Resources\emblem-shared.png" />
+    <Content Include="Resources\emblem-symbolic-link.png" />
+    <Content Include="Resources\emblem-synchronizing.png" />
+    <Content Include="Resources\emblem-unreadable.png" />
+    <Content Include="Resources\emblem-web.png" />
+    <Content Include="Resources\empty %281%29.png" />
+    <Content Include="Resources\empty %282%29.png" />
+    <None Include="Resources\empty %282%291.png" />
+    <Content Include="Resources\empty.png" />
+    <Content Include="Resources\enter24.png" />
+    <Content Include="Resources\gba.png" />
+    <Content Include="Resources\iconfinde32.png" />
+    <Content Include="Resources\iconfinder_checkout_88374 %281%29.png" />
+    <Content Include="Resources\iconfinder_Delete_1493279.png" />
+    <Content Include="Resources\iconfinder_document-02_1622834 %281%29.png" />
+    <Content Include="Resources\iconfinder_document-02_1622834 %2812%29.png" />
+    <Content Include="Resources\iconfinder_document-02_1622834.png" />
+    <Content Include="Resources\iconfinder_edit-group_46797.png" />
+    <Content Include="Resources\iconfinder_Facebook_UI-31_2344305.png" />
+    <Content Include="Resources\iconfinder_file_delete_48762.png" />
+    <Content Include="Resources\iconfinder_General_Office_35_3592854 %281%29.png" />
+    <Content Include="Resources\iconfinder_icon-136-document-edit_314251.png" />
+    <Content Include="Resources\iconfinder_icon-person-add_211872.png" />
+    <Content Include="Resources\iconfinder_list-add_118777.png" />
+    <Content Include="Resources\iconfinder_simpline_19_2305592.png" />
+    <Content Include="Resources\iconfinder_simpline_53_2305609.png" />
+    <Content Include="Resources\iconfinder_TV_Schedule_4074108.png" />
+    <Content Include="Resources\iconfinder_view_detailed_15553.png" />
+    <Content Include="Resources\iconfinder_Web_Page_Clear_4341265.png" />
+    <Content Include="Resources\iconfinder__30ui_2303135.png" />
+    <Content Include="Resources\icons8-bag-brand-40.png" />
+    <Content Include="Resources\icons8-bag-brand-filled-40.png" />
+    <Content Include="Resources\icons8-business-documentation-64 %281%29.png" />
+    <Content Include="Resources\icons8-business-documentation-64 %282%29.png" />
+    <Content Include="Resources\icons8-business-documentation-64.png" />
+    <None Include="Resources\icons8-buy-48.png" />
+    <None Include="Resources\icons8-buy-36.png" />
+    <Content Include="Resources\icons8-carbohydrates-40.png" />
+    <Content Include="Resources\icons8-cash-in-hand-32.png" />
+    <Content Include="Resources\icons8-cash-in-hand-36.png" />
+    <None Include="Resources\icons8-cash-in-hand-361.png" />
+    <Content Include="Resources\icons8-cash-in-hand-40.png" />
+    <Content Include="Resources\icons8-checkout-32.png" />
+    <Content Include="Resources\icons8-checkout-36 %281%29.png" />
+    <Content Include="Resources\icons8-checkout-36 %282%29.png" />
+    <None Include="Resources\icons8-checkout-36 %282%291.png" />
+    <Content Include="Resources\icons8-checkout-36.png" />
+    <Content Include="Resources\icons8-data-backup-64.png" />
+    <Content Include="Resources\icons8-drawstring-bag-32.png" />
+    <Content Include="Resources\icons8-drawstring-bag-40.png" />
+    <Content Include="Resources\icons8-enter-24.png" />
+    <Content Include="Resources\icons8-enter-241.png" />
+    <Content Include="Resources\icons8-exit-32 %282%29.png" />
+    <Content Include="Resources\icons8-exit-32%281%29.png" />
+    <Content Include="Resources\icons8-exit-32.png" />
+    <Content Include="Resources\icons8-exit-filled-32.png" />
+    <Content Include="Resources\icons8-financial-analytics-64 %281%29.png" />
+    <None Include="Resources\icons8-financial-analytics-64 %281%291.png" />
+    <Content Include="Resources\icons8-financial-analytics-64.png" />
+    <Content Include="Resources\icons8-flip-chart-64.png" />
+    <None Include="Resources\icons8-flip-chart-641.png" />
+    <Content Include="Resources\icons8-get-cash-36.png" />
+    <None Include="Resources\icons8-get-cash-361.png" />
+    <Content Include="Resources\icons8-get-cash-40.png" />
+    <Content Include="Resources\icons8-input-32 %281%29.png" />
+    <Content Include="Resources\icons8-input-32.png" />
+    <Content Include="Resources\icons8-mastercard-credit-card-100.png" />
+    <Content Include="Resources\icons8-mastercard-credit-card-32.png" />
+    <Content Include="Resources\icons8-merge-docunemts-32.png" />
+    <Content Include="Resources\icons8-orange-shopping-basket-32.png" />
+    <Content Include="Resources\icons8-orange-shopping-basket-40 %281%29.png" />
+    <Content Include="Resources\icons8-orange-shopping-basket-40.png" />
+    <Content Include="Resources\icons8-paella-32.png" />
+    <Content Include="Resources\icons8-pouch-32.png" />
+    <Content Include="Resources\icons8-pouch-64.png" />
+    <Content Include="Resources\icons8-print-30.png" />
+    <Content Include="Resources\icons8-process-32.png" />
+    <Content Include="Resources\icons8-process-filled-32 %281%29.png" />
+    <Content Include="Resources\icons8-process-filled-32.png" />
+    <Content Include="Resources\icons8-refresh-16.png" />
+    <Content Include="Resources\icons8-refresh-40.png" />
+    <Content Include="Resources\icons8-used-product-64 %281%29.png" />
+    <Content Include="Resources\icons8-used-product-64 %282%29.png" />
+    <Content Include="Resources\icons8-used-product-64 %283%29.png" />
+    <None Include="Resources\icons8-used-product-64 %283%291.png" />
+    <Content Include="Resources\icons8-used-product-64 %284%29.png" />
+    <Content Include="Resources\icons8-used-product-64.png" />
+    <None Include="Resources\icons8-warehouse36.png" />
+    <Content Include="Resources\report.gif" />
+    <Content Include="Resources\Restor-32.png" />
+    <Content Include="Resources\save.png" />
+    <Content Include="Resources\saveTodisk.bmp" />
+    <Content Include="Resources\Shasli.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
